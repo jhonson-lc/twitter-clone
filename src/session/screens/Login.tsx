@@ -9,7 +9,7 @@ import {
 import React from "react";
 import Image from "next/image";
 import { Sub, Title } from "@/ui/feedback/Text";
-import bannerLogin from "../../public/bannerlogin.png";
+import bannerLogin from "/public/bannerlogin.png";
 import Twitter from "@/ui/icons/Twitter";
 import Button from "@/components/Button";
 import { FcGoogle } from "react-icons/fc";
