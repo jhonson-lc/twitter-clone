@@ -14,6 +14,7 @@ import Twitter from "@/ui/icons/Twitter";
 import Button from "@/components/Button";
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebookF } from "react-icons/fa";
+import { signIn } from "next-auth/react";
 
 interface Props {}
 
@@ -62,6 +63,7 @@ const LoginScreen: React.FC<Props> = () => {
                   icon={<FcGoogle />}
                   scheme="gray"
                   label="Registrarse con Google"
+                  onClick={() => signIn("google")}
                 />
                 <Button
                   icon={<FaFacebookF color="#385898" />}
