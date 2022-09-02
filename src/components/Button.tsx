@@ -22,7 +22,9 @@ const Button: React.FC<Props> = ({
       leftIcon={icon ? icon : ""}
       onClick={onclick}
       type={type}
-      fontSize="sm"
+      fontSize="md"
+      px={6}
+      py={6}
       colorScheme={scheme}
       rounded="40px"
       {...props}

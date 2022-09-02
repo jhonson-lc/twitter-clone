@@ -5,7 +5,7 @@ const extend = extendTheme({
     body: "verdana,system-ui, sans-serif",
   },
   styles: {
-    global: (props: any) => ({
+    global: () => ({
       body: {
         bg: "black",
         color: "white",
@@ -25,6 +25,20 @@ const extend = extendTheme({
       baseStyle: {
         fontWeight: "sm",
         fontFamily: "arial",
+      },
+    },
+    Text: {
+      variants: {
+        tweet: {
+          fontSize: "14px",
+        },
+      },
+    },
+    Link: {
+      baseStyle: {
+        _hover: {
+          textDecoration: "none",
+        },
       },
     },
   },
